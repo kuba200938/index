@@ -1,0 +1,31 @@
+div#blok1_gackowski
+{
+	width: 609px;
+	background-color: green;
+}
+div#blok2_gackowski
+{
+	width: 609px;
+	background-color: green;
+}
+div#blok3_gackowski
+{
+	width: 609px;
+	background-color: green;
+}
+div#blok1_gackowski:hover
+{
+	background-color: yellow;
+		font-size: 19mm;
+}
+div#blok2_gackowski:hover
+{
+	background-color: gold;
+		font-size: 19mm;
+}
+div#blok3_gackowski:hover
+{
+	background-color: silver;
+		font-size: 19mm;
+}
+

@@ -1,0 +1,52 @@
+html, body
+ {
+background-color: #dadada;
+ color: #000000;
+ margin-top: 10px;
+ font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+
+ div#strona
+ {
+width: 800px;
+ margin: 0 auto;
+ padding: 10px;
+ background-color: #6b6b6b;
+ }
+
+ div#naglowek
+ {
+height: 100px;
+ padding: 10px;
+ background-color: #bebebe;
+ color: #857f7f;
+ }
+
+ div#menu
+ {
+width: 150px;
+ float: left;
+ overflow: hidden;
+ padding: 10px;
+ background-color: #2c2b2c;
+ }
+ div#menu ul
+ {
+list-style-type: none;
+ }
+
+ div#zawartosc
+ {
+overflow: hidden;
+ padding: 20px;
+ background-color: #616161;
+ }
+
+ div#stopka
+ {
+clear: both;
+ padding: 10px;
+ background-color: #aaa8aa;
+ color: #b9b9b9;
+ }
+

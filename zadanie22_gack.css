@@ -1,0 +1,17 @@
+p
+{	
+	 color: red;
+	 font-size:22pt;
+}
+p#gruby_gackowski 
+{
+     color: green;
+	 font-size:17pt;
+	 font-weight: 900;
+}
+#dlawszystkich_gackowski
+{
+	color: yellow;
+	font-size:10pt;
+	font-family:Arial;
+}

@@ -1,0 +1,54 @@
+<html lang=pl>
+<head>
+<meta charset=utf-8>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+</head>
+<body>
+<h2> Sposoby podłączania CSS do kodu strony WWW</h2><br><br>
+<ol>
+
+<li><h3>Zewnętrzny arkusz stylów</h3>
+<textarea cols="70" rows="5">
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+</textarea>
+
+<li><h3>)Styl lokalny inaczej czyli 
+dopisanie arkusza do wybranego bloku treści strony</h3>
+<textarea cols="70" rows="5">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+</textarea>
+
+<li><h3>)Wewnętrzny arkusz stylów</h3>
+<textarea cols="70" rows="7">
+<head>
+ <style type="text/css">
+ selektor1 { cecha: wartość; cecha2: wartość2... }
+ selektor2 { cecha: wartość; cecha2: wartość2... }
+ </style>
+</head>
+</textarea>
+
+<li><h3>Alternatywny arkusz stylów</h3>
+<textarea cols="70" rows="9">
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+</textarea>
+
+<li><h3>Import arkusza stylów</h3>
+<textarea cols="70" rows="6">
+<style type="text/css">
+ @import url(adres zewnętrznego arkusza stylów);
+</style>
+</textarea>
+
+
+
+
+</ol>
+</body>
+</html>
