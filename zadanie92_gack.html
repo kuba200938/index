@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nazwisko Ucznia</title>
+<style type="text/css">
+* { margin: 0px; padding: 0px; }
+div { overflow: hidden; padding: 25px; }
+#ramka {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 400px;
+    max-width: 900px;
+}
+#naglowek {
+    background-color: #FCF;
+    font-size: 16pt;
+    color: #FF0000; /* czerwony */
+    background-color: skyblue;
+    font-family: Arial;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+#stopka {
+    background-color: #c0c0c0;
+    font-size: 16pt;
+    color: #0000FF; /* niebieski */
+    background-color: deepskyblue;
+    font-family: Arial;
+    font-style: italic;
+    clear: both;
+}
+.kolumny {
+    margin-top: 10px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    background-color: royalblue;
+    font-size: 0.5cm; /* pół centymetra */
+}
+#kol1 {
+    float: left;
+    width: 100px;
+    background-color: aquamarine;
+}
+#kol2 {
+background-color: cyan;
+size: 0.7cm;
+color: green;
+}
+/* overflow: hidden --> ukrywanie tekstu wychodzącego poza granice elementu */
+/* padding: 25px; --> dopełnianie wewnętrzne 25px */
+/* auto --> automatyczne wycentrowanie */
+/* minimalna szerokość strony --> 400px */
+/* maksymalna szerokość strony --> 900px */
+/* kolor czcionki w HEX na #FF0000 dla czerwonego i #0000FF dla niebieskiego */
+/* font-family: Arial; --> czcionka Arial */
+/* font-style: italic; --> kursywa */
+/* text-align: center; --> wyśrodkowanie tekstu */
+/* font-weight: bold; --> pogrubienie tekstu */
+/* clear-przyleganie elementów, both-oba (lewy i prawy bok) */
+</style>
+</head>
+<body>
+<div id="ramka">
+    <div id="naglowek">Nagłówek mojej strony</div>
+    <div class="kolumny" id="kol1"><p>Menu</p></div>
+    <div class="kolumny" id="kol2">
+        <p>Treść</p>
+        <p>Szablon pływający (płynny szablon)
+            Przy zmianie szerokości okna przeglądarki zmieniać się będzie szerokość kolumn.
+            Najczęściej zmiana szerokości dotyczy tylko wybranych kolumn np. kolumna menu
+            pozostaje niezmieniona, pozostałe kolumny zmieniaja się płynnie w stosunku do
+            szerokości okna.</p>
+        <img src="gackowski_100_procent.png" alt="Pierwszy obraz" />
+        <img src="gackowski_50procent.bmp" alt="Drugi obraz" />
+        
+    </div>
+    <div class="kolumny" id="menu_prawe_nazwisko"><p>Gackowski</p></div>
+  
+</div>
+<div id="stopka">Pracę wykonał nieznany wolontariusz</div>
+</body>
+</html>
