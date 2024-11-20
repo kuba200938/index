@@ -21,23 +21,33 @@
             alert(`Stan: ${this.stan}, Ilość pasażerów: ${this.ilosc_pasazerow}, Maksymalna prędkość: ${this.maksymalna_pedkosc} km/h, Długość: ${this.dlugosc} m`);
         }
 
-        autobus.prototype.dostep_do_wlasciwosci = function() {
-            document.write("Dostęp do właściwości" + "<br>");
+        autobus.prototype.dostep_do_wlasciwosci1 = function() {
+            document.write("autobus_1" + "<br>");
             document.write(`Stan: ${this.stan}, Ilość pasażerów: ${this.ilosc_pasazerow}, Maksymalna prędkość: ${this.maksymalna_pedkosc} km/h, Długość: ${this.dlugosc} m` + "<br>");
         }
 
-        const autobus_1 = new autobus(48, "nowy", 70, 25);
-        const autobus_2 = new autobus(50, "nowy", 80, 30);
-        const autobus_3 = new autobus(55, "nowy", 70, 30);
+        autobus.prototype.dostep_do_wlasciwosci2 = function() {
+            document.write("autobus_2" + "<br>");
+            document.write(`Stan: ${this.stan}, Ilość pasażerów: ${this.ilosc_pasazerow}, Maksymalna prędkość: ${this.maksymalna_pedkosc} km/h, Długość: ${this.dlugosc} m` + "<br>");
+        }
+
+        autobus.prototype.dostep_do_wlasciwosci3 = function() {
+            document.write("autobus_3" + "<br>");
+            document.write(`Stan: ${this.stan}, Ilość pasażerów: ${this.ilosc_pasazerow}, Maksymalna prędkość: ${this.maksymalna_pedkosc} km/h, Długość: ${this.dlugosc} m` + "<br>");
+        }
+
+        const autobus_1 = new autobus(48, "860", 70, 25);
+        const autobus_2 = new autobus(50, "870", 80, 30);
+        const autobus_3 = new autobus(55, "836", 70, 30);
 
         autobus_1.wypisz();
-        autobus_1.dostep_do_wlasciwosci();
+        autobus_1.dostep_do_wlasciwosci1();
 
         autobus_2.wypisz();
-        autobus_2.dostep_do_wlasciwosci();
+        autobus_2.dostep_do_wlasciwosci2();
 
         autobus_3.wypisz();
-        autobus_3.dostep_do_wlasciwosci();
+        autobus_3.dostep_do_wlasciwosci3();
     </script>
 </body>
 </html>
