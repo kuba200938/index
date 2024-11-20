@@ -1,0 +1,45 @@
+<textarea cols="70" rows="30">
+
+  <!DOCTYPE html>
+  <html lang="pl">
+  <head>
+      <meta charset="UTF-8">
+      
+      <title>z20</title>
+  </head>
+  <body>
+      <p id="wynik"></p>
+  </body>
+  <script>
+      var xa_gac = parseFloat(prompt("Podaj xa"))
+      var ya_gac = parseFloat(prompt("Podaj ya"))
+      var xb_gac = parseFloat(prompt("Podaj xb"))
+      var yb_gac = parseFloat(prompt("Podaj yb"))
+      var xc_gac = parseFloat(prompt("Podaj xc"))
+      var yc_gac = parseFloat(prompt("Podaj yc"))
+      document.getElementById("wynik").innerHTML = `AB=${AB_gac().toFixed(2)} BC=${BC_gac().toFixed(2)} AC=${AC_gac().toFixed(2)}`;
+  
+      function AB_gac() {
+          return Math.sqrt(Math.pow(xb_gac-xa_gac, 2) + Math.pow(yb_gac-ya_gac,2));
+      }
+  
+      function BC_gac() {
+          return Math.sqrt(Math.pow(xc_gac-xb_gac, 2) + Math.pow(yc_gac-yb_gac,2));
+      }
+  
+      function AC_gac() {
+          return Math.sqrt(Math.pow(xc_gac-xa_gac, 2)+ Math.pow(yc_gac-ya_gac,2));
+      }
+  
+      
+  </script>
+  </html>
+    
+</textarea>
+
+
+
+
+
+
+

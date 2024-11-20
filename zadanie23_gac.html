@@ -1,0 +1,60 @@
+<html> 
+<head> 
+<title>
+ Przykład obliczenia V i Pc walca
+</title>
+ <script language="JavaScript">
+    
+
+   
+   
+  
+
+    
+
+    function Drabina_gackowski(x,d) {
+        x_gac=parseFloat(x)
+        d_gac=parseFloat(d)
+     drabina_gac = Math.sqrt((x_gac*x_gac)+(d_gac*d_gac));
+    document.getElementsByName('drabina')[0].value=drabina_gac.toFixed(2);
+    
+      
+    }
+
+    function Alfa_gackowski(x,d) {
+        x_gac=parseFloat(x)
+        d_gac=parseFloat(d)
+        alfa_gac = Math.atan(x_gac/d_gac)*(180/Math.PI);
+        document.getElementsByName('alfa')[0].value=alfa_gac.toFixed(2);
+       
+        
+
+        
+    }
+
+
+    
+</script>
+</head>
+
+
+<body>
+<form name="formularz" action="..." onsubmit="Drabina_gackowski(this.x_gac.value,this.d_gac.value); 
+Alfa_gackowski(this.x_gac.value,this.d_gac.value);return false"> 
+ Podaj x=
+ <input size="6" name="x_gac">
+ Podaj d=
+ <input size="6" name="d_gac">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" onclick="Drabina_gackowski">
+ <br> <br>
+ Drabina=
+ <input size="6" name="drabina" onclick="Alfa_gackowski">
+ Alfa=
+ <input size="6" name="alfa" >
+</form>
+
+</body>
+
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+ <head> 
+ <title> zadanie 12</title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:green;font-size:43px;">
+ <script language="JavaScript">
+var liczba1=prompt("Pierwszy dzien=","");
+var liczba2=prompt("Godzina=","");
+var liczba3=prompt("Drugi dzien=","");
+var liczba4=prompt("Godzina=","");
+var suma;
+var dni;
+var Godziny;
+ var D1_gac=parseFloat(liczba1);
+ var D2_gac=parseFloat(liczba3);
+ var G1_gac=parseFloat(liczba2);
+ var G2_gac=parseFloat(liczba4);
+
+
+   dni=D1_gac-D2_gac
+   
+
+   if(G1_gac<G2_gac){
+
+Godziny=G2_gac-G1_gac
+}
+else{
+Godziny=G1_gac-G2_gac
+}
+ 
+
+   suma=dni-Godziny/24 
+
+ sekundy=suma*86400
+
+ document.write("Liczba sekund=" +liczba1+"dni + "+liczba2+"godzin - "+liczba3+"dni + "+liczba4+"godzin = "+sekundy+"sekund");
+ 
+</script>
+</div>
+</body>
+</html>
+

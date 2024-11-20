@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 31</title>
+</head>
+<body>
+    
+    <br> 
+    Programowanie obiektowe. <br>
+    Obiekt to autobus<br>
+    ilosc_pasazerow:<br>
+    stan<br>
+    maksymalna_pedkosc<br>
+    metoda: Autobus_wyswietl_gackowski<br>
+    nowe pole to dlugosc<br>
+    nowe metoda to autobus_pokaz_gackowski();<br> 
+
+    <script>
+        let autobus = {
+            ilosc_pasazerow: 48,
+            stan: "nowy",
+            maksymalna_pedkosc: '70 km/h',
+            autobus_wyswietl_gackowski: function() {
+                console.log(`ilosc_pasazerow : ${this.ilosc_pasazerow}, stan: ${this.stan}, maksymalna_pedkosc: ${this.maksymalna_pedkosc}`);
+            } 
+        }
+
+        autobus.autobus_wyswietl_gackowski();
+
+        autobus.dlugosc = 27;
+
+        autobus.autobus_pokaz_gackowski = function () {
+            alert(`ilosc_pasazerow : ${this.ilosc_pasazerow}, stan: ${this.stan}, maksymalna_pedkosc: ${this.maksymalna_pedkosc}, dlugosc: ${this.dlugosc} m`);
+        }
+
+        autobus.autobus_pokaz_gackowski();
+    </script>
+</body>
+</html>

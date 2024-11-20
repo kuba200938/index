@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>z22</title>
+</head>
+<body>
+    <input type="button" name="pole" value="Oblicz pole" Onclick="Pole_gackowski()"><br><br>
+    <input type="button" name="obwod" value="Oblicz obwod" Onclick="Obwod_gackowski()"><br><br>
+    <div style="color:red;font-size:50px;"id="nazwa"></div>
+    
+</body>
+<script>
+    var a_dana_gac = parseFloat(prompt("Podaj a"))
+    var b_dana_gac = parseFloat(prompt("Podaj b"))
+
+  
+
+    //document.getElementById("wynik").innerHTML = `Pole=${Pole_gackowski().toFixed(2)} Obwod=${Obwod_gackowski().toFixed(2)} `;    //<p id="wynik"></p>
+
+    function Pole_gackowski() {
+        var p= a_dana_gac*b_dana_gac;
+        document.getElementById("nazwa").innerHTML="Pole= " +p;
+    }
+
+    function Obwod_gackowski() {
+        var o=a_dana_gac+a_dana_gac+b_dana_gac+b_dana_gac;
+        document.getElementById("nazwa").innerHTML= "Obwód= " +o;
+    }
+
+
+    
+</script>
+</html>

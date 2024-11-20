@@ -1,0 +1,28 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+ function pole_gackowski()
+ {
+var a_gac= parseFloat(document.getElementById('dlugosc').value);
+var b_gac= a_gac*a_gac;
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_gac.toFixed(2)+" cm^2"; 
+ }
+ function obwod_gackowski()
+ {
+var a_gac= parseFloat(document.getElementById('dlugosc').value);
+var b_gac= 4*a_gac;
+ document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_gac.toFixed(2)+" cm"; 
+ }
+</script>
+
+ <h1>Wszystko o KWADRACIE</h1><br><br>
+ Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br>
+ <input type="button" name="pole" value="Oblicz pole" Onclick="pole_gackowski()"><br><br>
+ <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_gackowski()"><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>

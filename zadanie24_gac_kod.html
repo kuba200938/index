@@ -1,0 +1,50 @@
+<textarea cols="70" rows="30">
+
+    <html> 
+        <head> 
+        <title>
+         Przykład obliczenia V i Pc walca
+        </title>
+        </head>
+        <body>
+            <div style="color:darkblue;font-size:43px;">
+         <script language="JavaScript">
+            
+        
+            var x1_gac=parseFloat(prompt("x1=",""));
+         var x2_gac=parseFloat(prompt("x2=",""));
+           
+          
+         document.write("x1="+x1_gac+" &nbsp &nbsp &nbsp &nbsp &nbsp x2="+x2_gac+" <br>");
+            
+        
+        
+        
+            var y1 = 3*(x1_gac*(6/8));
+            var y2 = 2 * Math.cos(x1_gac) + 3 * Math.sin(x1_gac);
+            var y3 = Math.sqrt(Math.pow(x1_gac, 5)+2*Math.pow(x2_gac, 4) * Math.abs(x1_gac-x2_gac),3);
+            var rad=(x1_gac*Math.PI)/180;
+        
+        
+            document.write("x1="+x1_gac.toFixed(2)+" &nbsp &nbsp &nbsp &nbsp &nbsp x1="+rad.toFixed(2)+" <br>");
+            document.write("y1="+y1.toFixed(2)+"<br>"); 
+            document.write("y2="+y2.toFixed(2)+"<br>");
+            document.write("y3="+y3.toFixed(2)+"<br>");
+        </script>
+        
+        
+        
+        </div>
+        </body>
+        
+        
+        </html>
+    
+</textarea>
+
+
+
+
+
+
+
