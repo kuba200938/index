@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liczby Pierwsze</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        #output {
+            white-space: pre-line;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Obliczanie liczb pierwszych</h1>
+    <p>Program oblicza wartości wielomianu \( w(i) = i^2 + i + 41 \) dla \( i = 0, 1, 2, \ldots, 39 \). Za każdym kliknięciem przycisku wyświetlane jest kolejne 5 liczb.</p>
+    
+    <button class="button" onclick="showNextPrimes()">Pokaż kolejne liczby</button>
+    <div id="output"></div>
+
+    <script>
+        let currentIndex = 0;
+        const limit = 40;
+        const pauseAfter = 5;
+        const primes = [];
+
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let j = 2; j <= Math.sqrt(num); j++) {
+                if (num % j === 0) return false;
+            }
+            return true;
+        }
+
+        function calculatePrimes() {
+            for (let i = 0; i < limit; i++) {
+                let w = i * i + i + 41;
+                if (isPrime(w)) {
+                    primes.push({ index: i, value: w });
+                }
+            }
+        }
+
+        function showNextPrimes() {
+            const outputDiv = document.getElementById("output");
+            const results = primes.slice(currentIndex, currentIndex + pauseAfter);
+            if (results.length === 0) {
+                outputDiv.innerHTML += "\nBrak więcej liczb do wyświetlenia.";
+                return;
+            }
+            results.forEach(prime => {
+                outputDiv.innerHTML += `i=${prime.index}, w(${prime.index})=${prime.value}\n`;
+            });
+            currentIndex += pauseAfter;
+            if (currentIndex < primes.length) {
+                outputDiv.innerHTML += "--------------------\n";
+            }
+        }
+
+        calculatePrimes();
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<textarea cols="150" rows="50">
+
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zadanie 52 - Rysowanie Prostokąta</title>
+        <style>
+            pre {
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Zadanie 52 - Rysowanie Prostokąta</h1>
+        <p>Prostokąt z gwiazdek o wymiarach: a = 6, b = 20</p>
+        
+        <pre id="prostokat"></pre>
+        
+        <script>
+            function rysujProstokat(a_gac, b_gac) {
+                let output = '';
+                
+                
+                for (let i_gac = 0; i_gac < b_gac; i_gac++) {
+                    output += '*';
+                }
+                output += '\n';
+                
+              
+                for (let i_gac = 0; i_gac < a_gac - 2; i_gac++) {
+                    output += '*';
+                    for (let j_gac = 0; j_gac < b_gac - 2; j_gac++) {
+                        output += ' ';
+                    }
+                    output += '*\n';
+                }
+                
+                for (let i_gac = 0; i_gac < b_gac; i_gac++) {
+                    output += '*';
+                }
+                
+                document.getElementById("prostokat").textContent = output;
+            }
+    
+            rysujProstokat(6, 20);
+        </script>
+    </body>
+    </html>
+    
+    
+
+</textarea>

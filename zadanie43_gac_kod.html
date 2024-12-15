@@ -1,0 +1,47 @@
+<textarea cols="120" rows="50">
+
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zadanie 43</title>
+        <style>
+            button {
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Zadanie 43</h1>
+        <p>Wypisz wszystkie liczby parzyste od 2 do liczby podanej w okienku.</p>
+        
+        <button id="gackowski-Zadanie43">Podaj liczbę</button>
+      
+        <pre id="output"></pre>
+        
+        <script>
+            function wypiszParzyste() {
+                let i_k = parseInt(prompt("Podaj liczbę:"));
+                
+                if (isNaN(i_k) || i_k < 2) {
+                    alert("Podaj poprawną liczbę większą niż 2!");
+                    return;
+                }
+    
+                let output = '';
+                
+                for (let koniec_petli_gac = 2; koniec_petli_gac <= i_k; koniec_petli_gac += 2) {
+                    output += koniec_petli_gac + " ";
+                }
+    
+                document.getElementById("output").textContent = output;
+            }
+    
+            document.getElementById("gackowski-Zadanie43").addEventListener("click", wypiszParzyste);
+        </script>
+    </body>
+    </html>
+    
+
+</textarea>

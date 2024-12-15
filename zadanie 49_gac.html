@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 49 - Obliczanie silni</title>
+    <style>
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zadanie 49</h1>
+    <p>Oblicz silnię liczby n w sposób iteracyjny.</p>
+    
+    <button id="gackowski-Zadanie49">Podaj liczbę</button>
+  
+    <pre id="output"></pre>
+    
+    <script>
+        function obliczSilnia() {
+            let n_gac = parseInt(prompt("Podaj liczbę n:"));  
+            
+            if (isNaN(n_gac) || n_gac < 0) {
+                alert("Podaj poprawną liczbę nieujemną!");
+                return;
+            }
+
+            let silnia_gac = 1;  
+
+            if (n_gac === 0) {
+                silnia_gac = 1;  
+            } else {
+                for (let i_gac = 1; i_gac <= n_gac; i_gac++) {
+                    silnia_gac *= i_gac;  
+                }
+            }
+
+            document.getElementById("output").textContent = `Silnia ${n_gac}! = ${silnia_gac}`;
+        }
+
+        document.getElementById("gackowski-Zadanie49").addEventListener("click", obliczSilnia);
+    </script>
+</body>
+</html>
